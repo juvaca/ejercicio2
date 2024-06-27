@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Edades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Análisis de Edades</h1>
+        <form id="ageForm">
+            <label for="ageInput">Ingrese la edad de la persona:</label>
+            <input type="number" id="ageInput" min="1" max="120" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <div id="results">
+            <h2>Resultados:</h2>
+            <p><strong>Personas menores de edad:</strong> <span id="menores"></span></p>
+            <p><strong>Personas mayores de edad:</strong> <span id="mayores"></span></p>
+            <p><strong>Adultos mayores (60 años y más):</strong> <span id="adultosMayores"></span></p>
+            <p><strong>Edad más baja:</strong> <span id="edadMin"></span></p>
+            <p><strong>Edad más alta:</strong> <span id="edadMax"></span></p>
+            <p><strong>Promedio de edades:</strong> <span id="promedio"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
